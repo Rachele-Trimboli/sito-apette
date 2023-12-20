@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body{
+    font-family: "Roboto";
+display: flex;
+flex-direction: column;
+align-items:center ;
+
+}
+header{
+    width: 90%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#navigation-bar{
+    width: 100%;
+    height: 8em;
+    background-color: #fbf7e3;
+    border-radius: 60px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#navigation-bar div{
+    height: 40%;
+    background-color: #f3df85;
+    border-color: #f3df85;
+    border-radius: 40px;
+    height: 55%;
+    text-align: center;
+    color: #682e10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#shop{
+    flex-basis: 20%;
+    font-weight: 700;
+    justify-content: space-evenly;
+    height: 75%;
+}
+#shop img{
+    width: 45px;
+
+}
+#shop p{
+    font-size: 1.0em;
+    margin: 0;
+}
+
+.card{
+    min-width: 350px;
+    max-width: 450px;
+    background-color: #fbf7e3;
+    border-radius: 60px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.img{
+    background-image: url("./assets/imgs/honey.jpg");
+    width: 100%;
+    border-top-left-radius:40px;
+    border-top-right-radius:40px;
+    flex-grow: 1;
+    background-position: center;
+
+}
+.description{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #682e10;
+}
+.description h1{
+    margin-bottom: 0;
+    
+}
+.description p{
+    margin-top: 0.2em;
+    font-size: 1.3em;
+    
+}
+.price{
+    margin-left:10px
+}
+.add{
+    margin-bottom: 2em;
+    width: 60%;
+    margin-top: 10px;
+    border-radius: 20px;
+    height: 8%;
+    background-color: #f3df85;
+    border: #f3df85;
+    color: #682e10;
+    font-size: 1.2em;
+}
+.article-card{
+    min-width: 350px;
+    max-width: 450px;
+    background-color: #fbf7e3;
+    border-radius: 60px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+h1{
+    color: #682e10;
+}
+
+
+article{
+    margin-top: 10px;
+}
+article img{
+    width: 80%;
+}
+.image{
+    width: 80%;
+}
+.text{
+    width: 80%;
+    flex-grow: 1;
+    text-align: start;
+    color: #682e10;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:576px) {
+    #navigation-bar div {
+        width: 15%;
+        font-size: 1.2em;
+    }
+    .card{
+        max-width:33% ;
+    }
+    #main-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    article{
+        width: 80%;
+    }
+    .article-card {
+        max-width: 100%;
+ 
+    }
+}
+
